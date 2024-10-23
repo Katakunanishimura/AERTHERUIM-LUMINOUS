@@ -1,0 +1,102 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+}
+
+/* Header styling */
+header {
+    background-color: #2a2a40;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444466;
+    position: relative;
+}
+
+/* Hamburger menu styling */
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .line {
+    width: 30px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: none; /* Hidden by default */
+    background-color: #2a2a40;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Show menu when active */
+.nav-menu.active {
+    display: block;
+}
+
+/* Section styling for smooth scrolling effect */
+.section {
+    padding: 60px;
+    text-align: center;
+    min-height: 100vh; /* Makes sections full screen height */
+}
+
+#home {
+    background-color: #1e1e2f;
+}
+
+#leaderboards {
+    background-color: #2a2a40;
+}
+
+#richest {
+    background-color: #333355;
+}
+
+#strongest {
+    background-color: #444466;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
